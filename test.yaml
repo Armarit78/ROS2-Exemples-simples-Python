@@ -1,0 +1,37 @@
+header:
+  stamp:
+    sec: 0
+    nanosec: 0
+  frame_id: "map"
+height: 1
+width: 10
+fields:
+  - name: "x"
+    offset: 0
+    datatype: 7  # FLOAT32
+    count: 1
+  - name: "y"
+    offset: 4
+    datatype: 7  # FLOAT32
+    count: 1
+  - name: "z"
+    offset: 8
+    datatype: 7  # FLOAT32
+    count: 1
+is_bigendian: false
+point_step: 12  # Chaque point a 12 octets (4 octets pour x, y, z)
+row_step: 120  # 12 octets * 10 points
+data: [
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 1 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 2 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 3 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 4 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 5 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 6 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 7 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 8 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64,   # Point 9 (x=1.0, y=2.0, z=3.0)
+  0, 0, 128, 63, 0, 0, 0, 64, 0, 0, 64, 64    # Point 10 (x=1.0, y=2.0, z=3.0)
+]
+is_dense: true
+
